@@ -6,7 +6,6 @@ function deleteTournament(event) {
     type: 'DELETE',
     data: {id: tournamentId},
     success: function(response) {
-      console.log(response);
       var id = response.id;
       $('[value="'+ id + '"]').parent().remove();
     }

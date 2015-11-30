@@ -4536,3 +4536,173 @@ Processing by TournamentsController#destroy as */*
   [1m[35mSQL (0.2ms)[0m  DELETE FROM "tournaments" WHERE "tournaments"."id" = ?  [["id", 23]]
   [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
 Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2015-11-30 17:51:50 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 291ms (Views: 290.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2015-11-30 17:51:51 +0100
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-11-30 17:51:51 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2015-11-30 17:51:51 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-11-30 17:51:51 +0100
+
+
+Started GET "/assets/tournaments.self-33e9b3eda705c8c88ed8f31a4d2b3cebf334c50720439dc931dc297a762238a3.css?body=1" for ::1 at 2015-11-30 17:51:51 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-11-30 17:51:51 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2015-11-30 17:51:51 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2015-11-30 17:51:51 +0100
+
+
+Started GET "/assets/build-tourney-html.self-dd3bead337f96789779b34cd61497b1fcf522705c8f0cd3ba9133fd5d17d5db9.js?body=1" for ::1 at 2015-11-30 17:51:51 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2015-11-30 17:51:51 +0100
+
+
+Started GET "/assets/tournament-delete.self-a27f3161864ae11e5c78ec605eb42b9265c73a0d641ce67fe309ba61ca99f676.js?body=1" for ::1 at 2015-11-30 17:51:51 +0100
+
+
+Started GET "/assets/tournament-new.self-2c228e2bdf8deb82248a753ebacc70a5d3d96d93e3c6ce75639cf3e4387f9bfd.js?body=1" for ::1 at 2015-11-30 17:51:51 +0100
+
+
+Started GET "/assets/tournaments-index.self-ae549ecf426b408499148430bdede6fc35266bac623ed81d5d000e12363a181a.js?body=1" for ::1 at 2015-11-30 17:51:51 +0100
+
+
+Started GET "/assets/tournaments.self-5b242bda613f8b844c5269580d0b649e8cbe3ac6573367acf805643a2e0f806a.js?body=1" for ::1 at 2015-11-30 17:51:51 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-11-30 17:51:51 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2015-11-30 17:51:51 +0100
+Processing by TournamentsController#list as */*
+  [1m[35mTournament Load (0.2ms)[0m  SELECT "tournaments".* FROM "tournaments"
+Completed 200 OK in 20ms (Views: 5.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2015-11-30 17:51:51 +0100
+
+
+Started POST "/api/tournaments" for ::1 at 2015-11-30 17:51:56 +0100
+Processing by TournamentsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O+ZX0hTO4AYzGqvVSpUYdsN/My+N52ioPztgucwxt1GcHbaz6CQdH2zne+91s+DDy87dPHzvUGel9irIoGcgdA==", "tournament"=>{"name"=>"aaaaa"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tournaments" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "aaaaa"], ["created_at", "2015-11-30 16:51:56.263650"], ["updated_at", "2015-11-30 16:51:56.263650"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 19ms (Views: 0.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2015-11-30 17:52:01 +0100
+
+
+Started DELETE "/api/tournaments" for ::1 at 2015-11-30 17:52:15 +0100
+Processing by TournamentsController#destroy as */*
+  Parameters: {"id"=>"50"}
+  [1m[35mTournament Load (2.2ms)[0m  SELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT 1  [["id", 50]]
+Completed 404 Not Found in 22ms (ActiveRecord: 2.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Tournament with 'id'=50):
+  app/controllers/tournaments_controller.rb:17:in `destroy'
+
+
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.0ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.4ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (70.0ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (58.4ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (138.4ms)
+
+
+Started GET "/" for ::1 at 2015-11-30 17:54:02 +0100
+Processing by TournamentsController#index as HTML
+  Rendered tournaments/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 279ms (Views: 278.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tournament-delete.self-82ff712f4073245c3fca25fa110af75ce2869b7bf45a6ff3b577a1087773a874.js?body=1" for ::1 at 2015-11-30 17:54:03 +0100
+
+
+Started GET "/assets/bootstrap.self-f483ac3b88e1e3370077b698c09eeccfa05db3d0e26a303a9067085517dd829c.css?body=1" for ::1 at 2015-11-30 17:54:03 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-11-30 17:54:03 +0100
+
+
+Started GET "/assets/jquery_readyselector.self-e8333e4cf02799551960a3d4743eee34a3486889bfb9339716ea7deafb7b5224.js?body=1" for ::1 at 2015-11-30 17:54:03 +0100
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-11-30 17:54:03 +0100
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-11-30 17:54:03 +0100
+
+
+Started GET "/assets/tournaments.self-33e9b3eda705c8c88ed8f31a4d2b3cebf334c50720439dc931dc297a762238a3.css?body=1" for ::1 at 2015-11-30 17:54:03 +0100
+
+
+Started GET "/assets/bootstrap.self-2bbd2c0465f01b1f8270958ddfc2e62a08915f295a35d22df2971eb936cf3c64.js?body=1" for ::1 at 2015-11-30 17:54:03 +0100
+
+
+Started GET "/assets/build-error-html.self-5fe653b6c12fee9832fa0fde9c3a201b39d4d2e094ffa0494e4545c21260ac84.js?body=1" for ::1 at 2015-11-30 17:54:03 +0100
+
+
+Started GET "/assets/build-tourney-html.self-dd3bead337f96789779b34cd61497b1fcf522705c8f0cd3ba9133fd5d17d5db9.js?body=1" for ::1 at 2015-11-30 17:54:03 +0100
+
+
+Started GET "/assets/build-tourney-list-html.self-b543f1c45e64cf6131722a6793a5c941c6738105abbc7cd54724623b02630080.js?body=1" for ::1 at 2015-11-30 17:54:03 +0100
+
+
+Started GET "/assets/tournament-new.self-2c228e2bdf8deb82248a753ebacc70a5d3d96d93e3c6ce75639cf3e4387f9bfd.js?body=1" for ::1 at 2015-11-30 17:54:03 +0100
+
+
+Started GET "/assets/tournaments-index.self-ae549ecf426b408499148430bdede6fc35266bac623ed81d5d000e12363a181a.js?body=1" for ::1 at 2015-11-30 17:54:03 +0100
+
+
+Started GET "/assets/tournaments.self-5b242bda613f8b844c5269580d0b649e8cbe3ac6573367acf805643a2e0f806a.js?body=1" for ::1 at 2015-11-30 17:54:03 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-11-30 17:54:03 +0100
+
+
+Started GET "/assets/bootstrap.css.map" for ::1 at 2015-11-30 17:54:03 +0100
+
+
+Started GET "/api/tournaments.json" for ::1 at 2015-11-30 17:54:03 +0100
+Processing by TournamentsController#list as */*
+  [1m[36mTournament Load (0.9ms)[0m  [1mSELECT "tournaments".* FROM "tournaments"[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/glyphicons-halflings-regular.woff2" for ::1 at 2015-11-30 17:54:03 +0100
+
+
+Started DELETE "/api/tournaments" for ::1 at 2015-11-30 17:54:04 +0100
+Processing by TournamentsController#destroy as */*
+  Parameters: {"id"=>"24"}
+  [1m[35mTournament Load (0.2ms)[0m  SELECT  "tournaments".* FROM "tournaments" WHERE "tournaments"."id" = ? LIMIT 1  [["id", 24]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  DELETE FROM "tournaments" WHERE "tournaments"."id" = ?  [["id", 24]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 3.4ms)
