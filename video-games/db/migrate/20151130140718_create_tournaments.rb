@@ -1,7 +1,6 @@
 class CreateTournaments < ActiveRecord::Migration
   def change
     create_table :tournaments do |t|
-      t.references :player
       t.string :name
 
       t.timestamps null: false

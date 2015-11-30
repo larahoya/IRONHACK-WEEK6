@@ -1,7 +1,7 @@
 function buildTourneyHtml (tournament) {
   return '\
-    <li>\
+    <div>\<li>\
       <a href="/tournaments/' + tournament.id + '">' + tournament.name + '</a>\
-    </li>\
+    </li>\<button data-hook="tourney-delete" type="submit" name="tournament" value="'+  tournament.id + '">DELETE</button>\</div>\
   '
 }
